@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dra. Fernanda Melo | Nutricionista para Diabetes e Resistência à Insulina em Natal</title>
+<meta name="description" content="Nutricionista clínica em Natal/RN. Método CICLO para quem tem resistência à insulina, pré-diabetes ou diabetes. Consulta com mais de 1 hora e plano que cabe na sua rotina. Agende pelo WhatsApp.">
+<meta name="theme-color" content="#3F4722">
+<link rel="canonical" href="https://fernandamelonutri.vercel.app/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Dra. Fernanda Melo | Nutricionista Clínica em Natal">
+<meta property="og:description" content="Método CICLO: ciência com escuta, nutrição com autonomia. Para quem tem resistência à insulina, pré-diabetes ou diabetes.">
+<meta property="og:image" content="og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,600&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/fm-hero-recorte-1200.webp" imagesrcset="img/fm-hero-recorte-700.webp 700w, img/fm-hero-recorte-1200.webp 1144w" imagesizes="(max-width: 860px) 90vw, 42vw">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "MedicalBusiness"],
+  "name": "Dra. Fernanda Melo | Nutricionista Clínica",
+  "description": "Nutrição clínica para resistência à insulina, pré-diabetes e diabetes em Natal/RN. Método CICLO.",
+  "image": "og-image.jpg",
+  "telephone": "+55 84 99903-4169",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Rodrigues Alves, 1291, Espaço Clínica",
+    "addressLocality": "Natal",
+    "addressRegion": "RN",
+    "postalCode": "59020-200",
+    "addressCountry": "BR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -5.7990261, "longitude": -35.2025034 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "17:00" }
+  ],
+  "sameAs": ["https://www.instagram.com/fernandamelonutricionista/"],
+  "paymentAccepted": "Pix"
+}
+</script>
+
+<style>
+:root{
+  --oliva:#5E6B33;
+  --oliva-escuro:#3F4722;
+  --oliva-fundo:#343B1C;
+  --caramelo:#B8692A;
+  --caramelo-claro:#D08A4E;
+  --creme:#FBF6EE;
+  --areia:#E9DCC9;
+  --rose:#D49A85;
+  --cafe:#3A2A20;
+  --cafe-suave:#6A5545;
+  --serif:"Fraunces", Georgia, "Times New Roman", serif;
+  --sans:"Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --r-lg:32px;
+  --r-md:20px;
+  --gutter:clamp(16px, 4vw, 56px);
+  --max:1240px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html.lenis, html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto !important}
+body{
+  margin:0;
+  background:var(--creme);
+  color:var(--cafe);
+  font-family:var(--sans);
+  font-size:1.0625rem;
+  line-height:1.65;
+  overflow-x:hidden;
+  transition:background-color .9s var(--ease), color .9s var(--ease);
+}
+body[data-tone="areia"]{background:var(--areia)}
+body[data-tone="oliva"]{background:var(--oliva-fundo)}
+img{max-width:100%;display:block}
+figure{margin:0}
+a{color:inherit}
+p{margin:0 0 1em}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.04;letter-spacing:-.02em;margin:0;font-variation-settings:"opsz" 144}
+h1 em,h2 em,h3 em{font-style:italic;color:var(--caramelo);font-weight:400}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* grain */
+.grain{position:fixed;inset:-50%;pointer-events:none;z-index:90;opacity:.07;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.7em;min-height:52px;padding:.95em 1.6em;border-radius:999px;
+  font-family:var(--sans);font-weight:700;font-size:.98rem;text-decoration:none;border:0;cursor:pointer;
+  transition:background-color .4s var(--ease), color .4s var(--ease), box-shadow .4s var(--ease);will-change:transform}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--oliva);color:var(--creme);box-shadow:0 12px 30px -14px rgba(63,71,34,.7)}
+.btn-primary:hover{background:var(--oliva-escuro)}
+.btn-ghost{color:var(--cafe);padding-left:.2em;padding-right:.2em;min-height:44px}
+.btn-ghost span{border-bottom:1.5px solid var(--caramelo);padding-bottom:2px}
+.btn-light{background:var(--creme);color:var(--oliva-escuro)}
+.btn-light:hover{background:var(--areia)}
+:focus-visible{outline:2px solid var(--caramelo);outline-offset:3px;border-radius:8px}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:80;transition:background-color .5s var(--ease), box-shadow .5s var(--ease), color .5s}
+.nav.is-scrolled{background:rgba(251,246,238,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(58,42,32,.08)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--cafe);min-height:48px}
+.logo-fm{font-family:var(--serif);font-style:italic;font-size:1.9rem;line-height:1;color:var(--caramelo);font-weight:300;letter-spacing:-.04em}
+.logo-txt{display:flex;flex-direction:column;line-height:1.1}
+.logo-txt b{font-family:var(--serif);font-weight:400;font-size:1.15rem;letter-spacing:-.01em}
+.logo-txt small{font-size:.6rem;letter-spacing:.28em;font-weight:700;color:var(--oliva)}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none;margin:0;padding:0}
+.nav-links a{text-decoration:none;font-weight:700;font-size:.88rem;position:relative;padding:.6em 0}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:.35em;height:1.5px;background:var(--caramelo);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.nav-links a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav .btn{min-height:44px;padding:.7em 1.2em;font-size:.88rem}
+.menu-btn{display:none;width:48px;height:48px;border:0;background:transparent;cursor:pointer;position:relative;color:var(--cafe)}
+.menu-btn span{position:absolute;left:12px;right:12px;height:2px;background:currentColor;transition:transform .4s var(--ease), top .4s var(--ease)}
+.menu-btn span:nth-child(1){top:19px}.menu-btn span:nth-child(2){top:27px}
+.menu-open .menu-btn span:nth-child(1){top:23px;transform:rotate(45deg)}
+.menu-open .menu-btn span:nth-child(2){top:23px;transform:rotate(-45deg)}
+.mobile-menu{position:fixed;inset:0;z-index:79;background:var(--oliva-fundo);color:var(--creme);display:flex;flex-direction:column;justify-content:center;padding:96px var(--gutter) 40px;
+  clip-path:circle(0% at calc(100% - 40px) 38px);transition:clip-path .8s var(--ease);visibility:hidden}
+.menu-open .mobile-menu{clip-path:circle(150% at calc(100% - 40px) 38px);visibility:visible}
+.mobile-menu a{font-family:var(--serif);font-size:2.4rem;text-decoration:none;line-height:1.5}
+.mobile-menu .btn{margin-top:2rem;align-self:flex-start;font-family:var(--sans);font-size:1rem}
+.menu-open .nav{color:var(--creme)}
+.menu-open .nav .logo,.menu-open .menu-btn{color:var(--creme)}
+.menu-open .nav.is-scrolled{background:transparent;box-shadow:none;backdrop-filter:none}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;padding:120px 0 72px;display:flex;align-items:center;overflow:clip}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(24px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.2vw,5.6rem);font-weight:300}
+.hero h1 .w{display:inline-block}
+.rot{display:inline-block;position:relative;height:1.12em;overflow:hidden;vertical-align:bottom;min-width:5.2ch}
+.rot span{display:block;font-style:italic;color:var(--caramelo);white-space:nowrap}
+.rot-list{display:block}
+.hero-lead{max-width:34rem;margin:1.8rem 0 2.2rem;font-size:1.13rem;color:var(--cafe-suave)}
+.hero-lead strong{color:var(--cafe)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:1rem 1.6rem;align-items:center}
+.hero-facts{display:flex;flex-wrap:wrap;gap:.6rem 2.2rem;margin-top:2.8rem;padding-top:1.6rem;border-top:1px solid rgba(58,42,32,.14);max-width:34rem}
+.hero-facts div{font-size:.86rem;line-height:1.35;color:var(--cafe-suave)}
+.hero-facts b{display:block;font-family:var(--serif);font-weight:400;font-size:1.7rem;color:var(--cafe);letter-spacing:-.02em}
+.hero-visual{position:relative;aspect-ratio:.82;width:100%;max-width:520px;justify-self:end}
+.arch{position:absolute;inset:30% 4% 0 4%;border-radius:999px 999px var(--r-lg) var(--r-lg);
+  background:radial-gradient(120% 80% at 50% 10%, #E7B79F 0%, var(--rose) 45%, #C27E62 100%);overflow:hidden}
+.arch::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 40% at 50% 100%, rgba(58,42,32,.22), transparent 70%)}
+.hero-person{position:absolute;left:1%;bottom:0;width:98%;z-index:2;filter:drop-shadow(0 30px 40px rgba(58,42,32,.25))}
+.hero-person img{width:100%;height:auto}
+.ring{position:absolute;inset:18% -2% -4% -2%;z-index:1;pointer-events:none;overflow:visible}
+.ring circle{fill:none;stroke:var(--caramelo);stroke-width:1.2}
+.badge{position:absolute;z-index:3;left:-6%;bottom:12%;width:clamp(110px,11vw,150px);aspect-ratio:1;border-radius:50%;background:var(--creme);box-shadow:0 18px 40px -18px rgba(58,42,32,.5);display:grid;place-items:center}
+.badge svg{position:absolute;inset:0;width:100%;height:100%}
+.badge text{font-family:var(--sans);font-weight:700;font-size:8px;letter-spacing:.12em;fill:var(--oliva)}
+.badge-core{font-family:var(--serif);font-style:italic;font-size:1.9rem;color:var(--caramelo);line-height:1}
+.hero-line{position:absolute;left:0;right:0;bottom:28px;z-index:0;pointer-events:none;width:100%;height:120px}
+.hero-line path,.thread path{fill:none;stroke:var(--caramelo);stroke-width:1.3;stroke-linecap:round;opacity:.55}
+
+/* SECTIONS */
+section{position:relative}
+.sec{padding:clamp(88px,13vw,180px) 0}
+.sec-title{font-size:clamp(2.2rem,5vw,4.4rem);max-width:15ch}
+.sec-intro{max-width:36rem;color:var(--cafe-suave);font-size:1.1rem;margin-top:1.4rem}
+.dark{color:var(--creme);background:var(--oliva-fundo)}
+.manifesto,.depo{border-radius:clamp(28px,4vw,56px)}
+.dark .sec-intro{color:rgba(251,246,238,.75)}
+.dark h2 em{color:var(--caramelo-claro)}
+
+/* MANIFESTO */
+.manifesto{padding:clamp(120px,18vw,240px) 0}
+.manifesto p.big{font-family:var(--serif);font-size:clamp(2.3rem,6.6vw,6.2rem);line-height:1.05;letter-spacing:-.025em;font-weight:300;max-width:16ch;margin:0}
+.manifesto p.big .mw{display:inline-block;margin-right:.22em}
+.manifesto p.big em{font-style:italic;color:var(--caramelo-claro)}
+.manifesto .sign{display:flex;align-items:center;gap:1rem;margin-top:3rem;font-size:.95rem;color:rgba(251,246,238,.7)}
+.manifesto .sign span{font-family:var(--serif);font-style:italic;font-size:1.6rem;color:var(--caramelo-claro)}
+
+/* PARA QUEM (bento) */
+.bento{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:minmax(120px,auto);gap:18px;margin-top:clamp(40px,6vw,72px)}
+.card{background:var(--creme);border-radius:var(--r-lg);padding:clamp(24px,3vw,40px);position:relative;overflow:hidden;box-shadow:0 1px 0 rgba(58,42,32,.06)}
+.card h3{font-size:clamp(1.6rem,2.6vw,2.3rem);margin-bottom:.8rem}
+.card p{color:var(--cafe-suave);margin:0}
+.card .tag{display:inline-block;font-size:.78rem;font-weight:700;color:var(--oliva);border:1px solid rgba(94,107,51,.35);border-radius:999px;padding:.35em .9em;margin-bottom:1.4rem}
+.c-ri{grid-column:1/8;grid-row:1/3;background:var(--oliva);color:var(--creme);display:flex;flex-direction:column;justify-content:flex-end;min-height:420px}
+.c-ri p{color:rgba(251,246,238,.82);max-width:30rem}
+.c-ri .tag{color:var(--creme);border-color:rgba(251,246,238,.4);align-self:flex-start}
+.c-ri h3{font-size:clamp(2rem,3.6vw,3.2rem)}
+.c-ri .ring-deco{position:absolute;right:-90px;top:-90px;width:320px;height:320px;border:1.2px solid rgba(208,138,78,.6);border-radius:50%}
+.c-ri .ring-deco::after{content:"";position:absolute;inset:40px;border:1.2px solid rgba(208,138,78,.35);border-radius:50%}
+.c-pd{grid-column:8/13;grid-row:1}
+.c-dm{grid-column:8/13;grid-row:2}
+.c-photo{grid-column:1/6;grid-row:3/5;padding:0;min-height:460px;background:var(--cafe)}
+.c-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.c-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:32px;color:var(--creme);background:linear-gradient(to top, rgba(58,42,32,.85), transparent)}
+.c-photo blockquote{margin:0;font-family:var(--serif);font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.15;font-style:italic}
+.c-list{grid-column:6/13;grid-row:3/5;background:var(--oliva-fundo);color:var(--creme);display:flex;flex-direction:column;justify-content:center}
+.c-list li{color:rgba(251,246,238,.85)}
+.c-list h3{color:var(--creme)}
+.c-list ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.9rem 2rem}
+.c-list li{display:flex;gap:.8rem;align-items:flex-start;line-height:1.45}
+.c-list li svg{flex:none;width:22px;height:22px;margin-top:1px;stroke:var(--caramelo);fill:none;stroke-width:1.5}
+.c-list h3{font-size:clamp(1.5rem,2.2vw,1.9rem);margin-bottom:1.4rem}
+
+/* CONSULTA: stacked cards */
+.stack-head{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:end}
+.stack{margin-top:clamp(48px,7vw,96px);display:flex;flex-direction:column;gap:28px}
+.scard{position:sticky;top:110px;min-height:min(62vh,520px);border-radius:var(--r-lg);padding:clamp(28px,4.5vw,64px);
+  display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,64px);align-items:center;transform-origin:50% 0;will-change:transform}
+.scard:nth-child(1){background:var(--creme)}
+.scard:nth-child(2){background:#F3E8D8}
+.scard:nth-child(3){background:var(--areia)}
+.scard:nth-child(4){background:#DCC9AF}
+.scard:nth-child(5){background:var(--oliva);color:var(--creme)}
+.scard:nth-child(5) p{color:rgba(251,246,238,.82)}
+.scard:nth-child(5) .num{color:var(--caramelo-claro);border-color:rgba(208,138,78,.6)}
+.scard .num{font-family:var(--serif);font-size:clamp(4rem,9vw,8.5rem);line-height:1;color:var(--caramelo);font-weight:300;font-style:italic;
+  width:clamp(110px,15vw,210px);aspect-ratio:1;border:1.2px solid rgba(184,105,42,.45);border-radius:50%;display:grid;place-items:center;padding-bottom:.08em}
+.scard h3{font-size:clamp(1.9rem,3.8vw,3.4rem);margin-bottom:1rem;max-width:18ch}
+.scard p{font-size:1.12rem;color:var(--cafe-suave);max-width:34rem;margin:0}
+.scard small{display:block;margin-top:1.2rem;font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--oliva)}
+
+/* DIFERENCIAIS */
+.difs{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,6vw,96px);align-items:start;margin-top:clamp(40px,6vw,72px)}
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.num-box{border-radius:var(--r-md);padding:28px;background:var(--creme)}
+.num-box.big{grid-column:span 2;background:var(--cafe);color:var(--creme);display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;min-height:220px}
+.num-box .n{font-family:var(--serif);font-size:clamp(3.2rem,6vw,5.4rem);line-height:1;letter-spacing:-.03em;font-weight:300;display:flex;align-items:flex-start}
+.num-box.big .n{font-size:clamp(4.4rem,9vw,8rem);color:var(--caramelo-claro)}
+.num-box .n sup{font-size:.4em;margin-top:.2em;margin-left:.08em}
+.num-box p{margin:.6rem 0 0;font-size:.95rem;color:var(--cafe-suave);line-height:1.45}
+.num-box.big p{color:rgba(251,246,238,.75);max-width:13rem;text-align:right}
+.count{font-variant-numeric:tabular-nums}
+.dif-list{list-style:none;margin:0;padding:0;counter-reset:d}
+.dif-list li{padding:1.6rem 0;border-top:1px solid rgba(58,42,32,.14);display:grid;grid-template-columns:3.2rem 1fr;gap:1rem}
+.dif-list li:last-child{border-bottom:1px solid rgba(58,42,32,.14)}
+.dif-list li::before{counter-increment:d;content:"0" counter(d);font-family:var(--serif);font-style:italic;color:var(--caramelo);font-size:1.3rem;line-height:1.3}
+.dif-list h3{font-family:var(--sans);font-weight:700;font-size:1.12rem;letter-spacing:0;line-height:1.35;margin-bottom:.35rem}
+.dif-list p{margin:0;color:var(--cafe-suave);font-size:1rem}
+
+/* DEPOIMENTOS horizontal */
+.depo{overflow:hidden}
+.depo-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap}
+.google{display:flex;align-items:center;gap:.9rem;color:rgba(251,246,238,.82);font-size:.95rem}
+.google b{font-family:var(--serif);font-weight:400;font-size:2.4rem;color:var(--creme);line-height:1}
+.stars{display:flex;gap:3px}
+.stars svg{width:16px;height:16px;fill:var(--caramelo-claro)}
+.track-wrap{margin-top:clamp(48px,6vw,80px)}
+.track{display:flex;gap:22px;padding:0 var(--gutter);width:max-content}
+.q{width:min(440px,78vw);flex:none;border-radius:var(--r-lg);padding:36px;background:rgba(251,246,238,.06);border:1px solid rgba(251,246,238,.14);color:var(--creme);display:flex;flex-direction:column;justify-content:space-between;min-height:380px}
+.q:nth-child(odd){background:var(--creme);color:var(--cafe);border-color:transparent}
+.q:nth-child(odd) .who small{color:var(--cafe-suave)}
+.q blockquote{margin:0;font-family:var(--serif);font-size:1.4rem;line-height:1.3;font-weight:300}
+.q blockquote::before{content:"\201C";display:block;font-size:4rem;line-height:.6;color:var(--caramelo);margin-bottom:.6rem;font-style:italic}
+.q .who{margin-top:2rem;font-weight:700;font-size:.95rem}
+.q .who small{display:block;font-weight:400;color:rgba(251,246,238,.65);font-size:.85rem}
+.q.story{background:var(--caramelo);color:var(--creme)}
+.q.story blockquote::before{color:var(--creme)}
+.q.story .who small{color:rgba(251,246,238,.8)}
+
+/* SOBRE */
+.sobre-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,96px);align-items:end}
+.sobre-visual{position:relative;align-self:stretch;min-height:640px}
+.sobre-blob{position:absolute;left:0;right:6%;bottom:0;height:72%;background:var(--creme);border-radius:999px 999px var(--r-lg) var(--r-lg)}
+.sobre-person{position:absolute;bottom:0;left:0;right:0;margin:0 auto;height:100%;width:max-content;max-width:none;z-index:1}
+.sobre-person img{height:100%;width:auto;-webkit-mask-image:linear-gradient(to bottom,#000 72%,transparent 99%);mask-image:linear-gradient(to bottom,#000 72%,transparent 99%)}
+.sobre-text .sec-title{max-width:14ch}
+.sobre-text > p{color:var(--cafe-suave);max-width:36rem;font-size:1.1rem;margin-top:1.4rem}
+.timeline{position:relative;margin-top:3rem;padding-left:42px}
+.tl-line{position:absolute;left:10px;top:8px;bottom:8px;width:1.5px;background:rgba(58,42,32,.14)}
+.tl-line i{position:absolute;inset:0;background:var(--caramelo);transform-origin:top;transform:scaleY(1)}
+.tl-item{position:relative;padding-bottom:2.4rem}
+.tl-item:last-child{padding-bottom:0}
+.tl-dot{position:absolute;left:-40px;top:4px;width:22px;height:22px;border-radius:50%;background:var(--areia);border:1.5px solid var(--caramelo);transition:background-color .5s}
+.tl-item.on .tl-dot{background:var(--caramelo)}
+.tl-item h3{font-family:var(--sans);font-weight:700;font-size:1.1rem;letter-spacing:0;line-height:1.3;margin-bottom:.4rem}
+.tl-item h3 span{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--caramelo);margin-right:.4rem}
+.tl-item p{margin:0;color:var(--cafe-suave)}
+.polas{display:flex;gap:16px;margin-top:2.6rem}
+.pola{background:var(--creme);padding:10px 10px 14px;border-radius:14px;box-shadow:0 20px 40px -24px rgba(58,42,32,.5);width:min(200px,42%)}
+.pola img{border-radius:8px;aspect-ratio:3/4;object-fit:cover;width:100%;height:auto}
+.pola figcaption{font-family:var(--serif);font-style:italic;font-size:.95rem;text-align:center;margin-top:8px;color:var(--cafe-suave)}
+.pola:nth-child(1){transform:rotate(-3deg)}
+.pola:nth-child(2){transform:rotate(2.5deg) translateY(18px)}
+
+/* LOCAL */
+.local-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:clamp(40px,6vw,72px)}
+.local-info{background:var(--creme);border-radius:var(--r-lg);padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;gap:1.8rem}
+.local-info h3{font-size:clamp(1.8rem,3vw,2.6rem)}
+.addr{font-size:1.1rem;line-height:1.5}
+.addr a{font-weight:700;text-decoration:none;border-bottom:1.5px solid var(--caramelo);display:inline-block;padding:.85rem 0 .25rem}
+.hours{width:100%;border-collapse:collapse;font-size:1rem}
+.hours td{padding:.7rem 0;border-top:1px solid rgba(58,42,32,.12)}
+.hours td:last-child{text-align:right;font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem}
+.chips span{font-size:.85rem;font-weight:700;color:var(--oliva);border:1px solid rgba(94,107,51,.35);border-radius:999px;padding:.4em 1em}
+.map{border-radius:var(--r-lg);overflow:hidden;min-height:440px;position:relative;background:var(--areia);clip-path:inset(0 round var(--r-lg))}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:sepia(.25) saturate(.85)}
+
+/* CTA */
+.cta{padding:clamp(100px,14vw,200px) 0 0;overflow:hidden}
+.cta-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:end}
+.cta h2{font-size:clamp(2.6rem,6.4vw,6rem);font-weight:300;max-width:13ch}
+.cta-text{padding-bottom:clamp(80px,10vw,140px)}
+.cta-text p{color:rgba(251,246,238,.78);font-size:1.15rem;max-width:30rem;margin:1.6rem 0 2.4rem}
+.cta-visual{position:relative;justify-self:end;width:min(520px,100%)}
+.cta-visual .circle{position:absolute;left:8%;right:8%;bottom:0;aspect-ratio:1;border-radius:50%;background:var(--oliva);transform:translateY(30%)}
+.cta-visual .circle::after{content:"";position:absolute;inset:-28px;border:1.2px solid rgba(208,138,78,.55);border-radius:50%}
+.cta-visual img{position:relative;z-index:1;width:100%;height:auto}
+
+/* FOOTER */
+footer{background:var(--cafe);color:rgba(251,246,238,.75);padding:64px 0 120px;font-size:.92rem}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.4rem}
+footer .logo{color:var(--creme)}
+footer h4{font-family:var(--sans);font-size:.95rem;color:var(--creme);margin:0 0 .8rem}
+footer a{text-decoration:none}
+footer a:hover{color:var(--creme)}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}
+footer ul a{display:inline-block;padding:.65rem 0}
+.foot-bottom{margin-top:48px;padding-top:24px;border-top:1px solid rgba(251,246,238,.14);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.82rem}
+
+/* WhatsApp float */
+.wa{position:fixed;right:20px;bottom:20px;z-index:85;width:60px;height:60px;border-radius:50%;background:var(--oliva);color:var(--creme);display:grid;place-items:center;
+  box-shadow:0 16px 32px -12px rgba(52,59,28,.7);text-decoration:none;transition:transform .5s var(--ease), opacity .5s;}
+.wa svg{width:28px;height:28px}
+.wa::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:1.2px solid var(--caramelo);opacity:.7;animation:pulse 2.8s var(--ease) infinite}
+@keyframes pulse{0%{transform:scale(.9);opacity:.8}100%{transform:scale(1.35);opacity:0}}
+.wa.hide{transform:scale(.6);opacity:0;pointer-events:none}
+
+/* cursor */
+.cursor,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:100;border-radius:50%;display:none}
+.cursor{width:8px;height:8px;background:var(--caramelo);margin:-4px 0 0 -4px}
+.cursor-ring{width:40px;height:40px;border:1.2px solid var(--caramelo);margin:-20px 0 0 -20px;transition:width .4s var(--ease),height .4s var(--ease),margin .4s var(--ease),background-color .4s}
+.cursor-ring.hover{width:72px;height:72px;margin:-36px 0 0 -36px;background:rgba(184,105,42,.12)}
+@media (hover:hover) and (pointer:fine){ .has-cursor .cursor,.has-cursor .cursor-ring{display:block} }
+
+/* RESPONSIVE */
+@media (max-width: 980px){
+  .nav-links,.nav .nav-cta{display:none}
+  .menu-btn{display:block}
+  .hero-grid{grid-template-columns:1fr}
+  .hero{padding-top:96px}
+  .hero-visual{order:-1;justify-self:center;max-width:400px;width:86%}
+  .hero-text{text-align:left}
+  .bento{grid-template-columns:1fr}
+  .c-ri,.c-pd,.c-dm,.c-photo,.c-list{grid-column:auto;grid-row:auto}
+  .c-photo{order:4}
+  .c-ri{min-height:380px}
+  .c-photo{min-height:420px}
+  .stack-head,.difs,.sobre-grid,.local-grid,.cta-grid{grid-template-columns:1fr}
+  .sobre-visual{min-height:560px;order:-1;max-width:420px;width:100%;margin:0 auto}
+  .cta-visual{justify-self:center;max-width:380px}
+  .cta-text{padding-bottom:0}
+  .foot{grid-template-columns:1fr 1fr}
+  .foot > :first-child{grid-column:span 2}
+}
+@media (max-width: 600px){
+  body{font-size:1rem}
+  .hero h1{font-size:clamp(2.3rem,10.5vw,3rem)}
+  .hero-lead{font-size:1.03rem}
+  .hero-facts{gap:.8rem 1.6rem}
+  .hero-facts b{font-size:1.4rem}
+  .badge{left:-4%;bottom:6%;width:96px}
+  .badge-core{font-size:1.4rem}
+  .c-list ul{grid-template-columns:1fr}
+  .scard{grid-template-columns:1fr;position:relative;top:auto;min-height:auto;gap:18px}
+  .scard .num{width:84px;font-size:3rem}
+  .nums{grid-template-columns:1fr}
+  .num-box.big{grid-column:auto;flex-direction:column;align-items:flex-start}
+  .num-box.big p{text-align:left}
+  .q{padding:28px;min-height:340px}
+  .q blockquote{font-size:1.2rem}
+  .track{overflow-x:auto;scroll-snap-type:x mandatory;width:auto;padding-bottom:12px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .track::-webkit-scrollbar{display:none}
+  .q{scroll-snap-align:center}
+  .sobre-visual{min-height:480px}
+  .map{min-height:320px}
+  .foot{grid-template-columns:1fr}
+  .foot > :first-child{grid-column:auto}
+  .wa{right:16px;bottom:16px;width:56px;height:56px}
+  .polas{gap:12px}
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .scard{position:relative;top:auto}
+}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#topo" class="logo" aria-label="Fernanda Melo, nutricionista. Voltar ao início">
+      <span class="logo-fm" aria-hidden="true">fm</span>
+      <span class="logo-txt"><b>fernanda melo</b><small>NUTRICIONISTA</small></span>
+    </a>
+    <nav aria-label="Principal">
+      <ul class="nav-links">
+        <li><a href="#para-quem">Para quem é</a></li>
+        <li><a href="#consulta">A consulta</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#local">Onde atendo</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary nav-cta magnetic" href="https://wa.me/5584999034169?text=Ol%C3%A1%2C%20Fernanda!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20consulta." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="#para-quem">Para quem é</a>
+  <a href="#consulta">A consulta</a>
+  <a href="#depoimentos">Depoimentos</a>
+  <a href="#sobre">Sobre</a>
+  <a href="#local">Onde atendo</a>
+  <a class="btn btn-light" href="https://wa.me/5584999034169?text=Ol%C3%A1%2C%20Fernanda!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20consulta." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+</div>
+
+<main id="topo">
+
+<!-- HERO -->
+<section class="hero" data-tone="creme" aria-labelledby="h1">
+  <svg class="hero-line" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path id="heroLine" d="M0 70 C 180 20, 300 110, 480 70 S 760 10, 940 64 S 1240 118, 1440 46"/></svg>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1 id="h1">
+        <span class="w">Glicemia</span> <span class="w">em</span> <span class="w">ordem,</span> <span class="w">com</span> <span class="w">um</span> <span class="w">plano</span> <span class="w">que</span> <span class="w">cabe</span> <span class="w">na</span> <span class="w">sua</span>
+        <span class="rot" aria-hidden="true"><span class="rot-list"><span>rotina.</span><span>família.</span><span>mesa.</span><span>agenda.</span><span>vida.</span></span></span><span class="sr-only">rotina.</span>
+      </h1>
+      <p class="hero-lead">Sou a <strong>Fernanda Melo</strong>, nutricionista clínica em Natal. Cuido de quem tem <strong>resistência à insulina, pré-diabetes e diabetes</strong> com uma consulta longa, escuta de verdade e um plano feito com a comida que você já come.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary magnetic" href="https://wa.me/5584999034169?text=Ol%C3%A1%2C%20Fernanda!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20consulta." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 8.23 8.24c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></svg>
+          Agendar pelo WhatsApp</a>
+        <a class="btn btn-ghost" href="#consulta"><span>Ver como é a consulta</span></a>
+      </div>
+      <div class="hero-facts">
+        <div><b>+1 hora</b>de primeira consulta</div>
+        <div><b>5,0</b>no Google, 63 avaliações</div>
+        <div><b>Natal</b>Espaço Clínica, Petrópolis</div>
+      </div>
+    </div>
+
+    <div class="hero-visual" id="heroVisual">
+      <svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle id="heroRing" cx="50" cy="44" r="46" pathLength="1" transform="rotate(-90 50 44)"/></svg>
+      <div class="arch" id="heroArch"></div>
+      <picture class="hero-person" id="heroPerson">
+        <source type="image/webp" srcset="img/fm-hero-recorte-700.webp 700w, img/fm-hero-recorte-1200.webp 1144w" sizes="(max-width: 980px) 86vw, 42vw">
+        <img src="img/fm-hero-recorte-1200.webp" width="1144" height="1336" alt="Fernanda Melo, nutricionista, sorrindo, de óculos, colete listrado e blusa amarela" fetchpriority="high">
+      </picture>
+      <div class="badge" id="badge" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+          <text><textPath href="#circ" textLength="284" lengthAdjust="spacingAndGlyphs">MÉTODO CICLO · CIÊNCIA · ESCUTA · AUTONOMIA · </textPath></text></svg>
+        <span class="badge-core">fm</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto dark" aria-label="Manifesto">
+  <div class="wrap">
+    <p class="big" id="manifesto">Não existe plano alimentar sem um <em>plano de vida.</em></p>
+    <div class="sign"><span>fm</span> O que você vive influencia o que você come. Por isso a sua rotina entra na consulta.</div>
+  </div>
+</section>
+
+<!-- PARA QUEM -->
+<section class="sec" id="para-quem" data-tone="areia" aria-labelledby="t-para">
+  <div class="wrap">
+    <h2 class="sec-title reveal" id="t-para">Para quem recebeu um <em>alerta</em> no exame e não quer viver de proibição.</h2>
+    <p class="sec-intro reveal">Cuidar da glicemia vai além do que você coloca no prato. Sono, estresse, trabalho e prazer também contam.</p>
+
+    <div class="bento">
+      <article class="card c-ri reveal">
+        <div class="ring-deco" aria-hidden="true"></div>
+        <span class="tag">Meu foco principal</span>
+        <h3>Resistência à insulina</h3>
+        <p>É quando o corpo precisa de cada vez mais insulina para controlar o açúcar no sangue. Costuma não dar sintoma, e é a fase em que a alimentação mais ajuda. A gente monta um plano para você agir agora, com calma e sem cortar tudo.</p>
+      </article>
+      <figure class="card c-photo reveal">
+        <img src="img/fm-consulta-800.webp" srcset="img/fm-consulta-800.webp 800w, img/fm-consulta-1600.webp 1080w" sizes="(max-width: 980px) 92vw, 40vw" width="1080" height="763" loading="lazy" alt="Fernanda Melo sorrindo, de blusa branca e colar turquesa">
+        <figcaption><blockquote>"Minha consulta não começa no prato. Começa na escuta."</blockquote></figcaption>
+      </figure>
+      <article class="card c-pd reveal">
+        <span class="tag">Glicemia de jejum alterada</span>
+        <h3>Pré-diabetes</h3>
+        <p>O exame acendeu a luz amarela. Você sai da consulta sabendo o que mudar primeiro, e com um plano que dá para seguir em semana corrida.</p>
+      </article>
+      <article class="card c-dm reveal">
+        <span class="tag">Junto com o seu médico</span>
+        <h3>Diabetes tipo 2</h3>
+        <p>Alimentação pensada junto com o seu tratamento, os seus horários e os remédios que você já usa.</p>
+      </article>
+      <article class="card c-list reveal">
+        <h3>Você se reconhece em algum destes?</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.5L16 9.5"/></svg>Já tentou dieta da moda e desistiu na segunda semana.</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.5L16 9.5"/></svg>Sente que agora tudo o que gosta virou proibido.</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.5L16 9.5"/></svg>Come fora, trabalha muito e não tem tempo de cozinhar.</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.5L16 9.5"/></svg>Tem medo de o pré-diabetes virar diabetes.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONSULTA -->
+<section class="sec" id="consulta" data-tone="creme" aria-labelledby="t-cons">
+  <div class="wrap">
+    <div class="stack-head">
+      <h2 class="sec-title reveal" id="t-cons">Como é a consulta no <em>Método CICLO</em></h2>
+      <p class="sec-intro reveal">Ciência com escuta, nutrição com autonomia. Cinco coisas que você precisa saber antes de marcar.</p>
+    </div>
+    <div class="stack" id="stack">
+      <article class="scard"><div class="num" aria-hidden="true">1</div><div><h3>A consulta pode passar de uma hora.</h3><p>E não é à toa. Esse tempo é para te conhecer de verdade: sua história, sua rotina, seus medos e seus objetivos. Cuidar bem exige presença, não pressa.</p></div></article>
+      <article class="scard"><div class="num" aria-hidden="true">2</div><div><h3>Eu não olho só o prato. Olho você por inteiro.</h3><p>Corpo, mente, emoções, vida social e rotina fazem parte da conversa, porque o que você vive influencia o que você come e como se cuida.</p></div></article>
+      <article class="scard"><div class="num" aria-hidden="true">3</div><div><h3>Você não sai com um plano que não caiba na sua vida.</h3><p>Prescrevo alimentos do seu hábito, respeitando sua cultura, seu prazer e sua rotina. Também te ensino algo novo, sem te afastar de quem você é.</p></div></article>
+      <article class="scard"><div class="num" aria-hidden="true">4</div><div><h3>Aqui não tem modismo.</h3><p>Nutrição clínica é tratamento feito com alimentos, suplementos quando necessário, e muita ciência. Sou sincera no que precisa ser dito, sempre com acolhimento e respeito.</p></div></article>
+      <article class="scard"><div class="num" aria-hidden="true">5</div><div><h3>Cada paciente é único. O plano também.</h3><p>O tratamento nunca é igual para todos, porque o plano terapêutico é individual.</p><small>E não estranhe se eu te receber com um abraço logo na primeira consulta.</small></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="sec" id="diferenciais" data-tone="areia" aria-labelledby="t-dif">
+  <div class="wrap">
+    <h2 class="sec-title reveal" id="t-dif">O que muda quando a consulta é <em>feita para você</em></h2>
+    <div class="difs">
+      <div class="nums">
+        <div class="num-box big reveal">
+          <div class="n"><span class="count" data-count="60">60</span><sup>min</sup></div>
+          <p>ou mais na primeira consulta, para entender a sua rotina antes de falar de comida.</p>
+        </div>
+        <div class="num-box reveal">
+          <div class="n"><span class="count" data-count="5" data-dec="1">5,0</span></div>
+          <p>de nota no Google, dada por quem já passou pelo consultório.</p>
+        </div>
+        <div class="num-box reveal">
+          <div class="n"><span class="count" data-count="63">63</span></div>
+          <p>avaliações de pacientes e familiares.</p>
+        </div>
+      </div>
+      <ol class="dif-list">
+        <li class="reveal"><div><h3>Comida de verdade, da sua cidade</h3><p>Cuscuz, tapioca e feijão continuam na mesa. O plano parte do que você já come.</p></div></li>
+        <li class="reveal"><div><h3>Plano que cabe na semana corrida</h3><p>Pensado para os seus horários, almoço fora e fim de semana com a família.</p></div></li>
+        <li class="reveal"><div><h3>Explicação clara, sem termo difícil</h3><p>Você entende o porquê de cada escolha e ganha autonomia para decidir sozinho.</p></div></li>
+        <li class="reveal"><div><h3>Trabalho junto com o seu médico</h3><p>A alimentação conversa com o seu tratamento e com os seus exames.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="sec depo dark" id="depoimentos" aria-labelledby="t-depo">
+  <div class="wrap depo-head">
+    <h2 class="sec-title reveal" id="t-depo">Vozes do <em>CICLO</em></h2>
+    <div class="google reveal">
+      <b>5,0</b>
+      <div><div class="stars" aria-hidden="true">
+        <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/></svg>
+      </div>63 avaliações no Google</div>
+    </div>
+  </div>
+  <div class="track-wrap" id="trackWrap">
+    <div class="track" id="track">
+      <figure class="q"><blockquote>Ao iniciar o processo, eu me sentia perdido e com dúvidas sobre como adaptar meus hábitos. A Dra. Fernanda me deu um acompanhamento individualizado, explicando de forma clara a importância de cada alimento para o tratamento.</blockquote><figcaption class="who">Gustavo Silveira<small>Acompanhamento para resistência à insulina</small></figcaption></figure>
+      <figure class="q"><blockquote>A Fernanda procurou adaptar a dieta à realidade dos meus pais, simplificando o processo para que eles pudessem seguir o plano alimentar da forma mais prática possível.</blockquote><figcaption class="who">Priscila Farias<small>Filha de pacientes, avaliação no Google</small></figcaption></figure>
+      <figure class="q story"><blockquote>Raquel chegou ao CICLO com uma rotina intensa de trabalho e estudos. Antes de falar de balança, a gente olhou para a vida dela. Cuidar da saúde transformou muito mais do que um número.</blockquote><figcaption class="who">Raquel Barra<small>História contada pela Fernanda</small></figcaption></figure>
+      <figure class="q"><blockquote>Fui tratar meu diabetes e ela olhou para várias coisas que eu precisava melhorar. Mudou muito a minha vida.</blockquote><figcaption class="who">Ana Celia Paiva<small>Avaliação no Google</small></figcaption></figure>
+      <figure class="q"><blockquote>Atendimento diferenciado e humano, pensando sempre no melhor para o paciente.</blockquote><figcaption class="who">Fernandes Araújo<small>Avaliação no Google</small></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sec" id="sobre" data-tone="areia" aria-labelledby="t-sobre">
+  <div class="wrap sobre-grid">
+    <div class="sobre-visual" id="sobreVisual">
+      <div class="sobre-blob" aria-hidden="true"></div>
+      <picture class="sobre-person">
+        <source type="image/webp" srcset="img/fm-sobre-recorte-700.webp 700w, img/fm-sobre-recorte-1200.webp 755w" sizes="(max-width: 980px) 60vw, 26vw">
+        <img src="img/fm-sobre-recorte-1200.webp" width="755" height="2083" loading="lazy" alt="Fernanda Melo sentada, de blusa amarela e saia marrom, sorrindo">
+      </picture>
+    </div>
+    <div class="sobre-text">
+      <h2 class="sec-title reveal" id="t-sobre">Para mim, nutrição nunca foi <em>só sobre comida.</em></h2>
+      <p class="reveal">É sobre cuidado, presença, escuta e transformação. Hoje eu me dedico a quem convive com resistência à insulina e diabetes, ajudando cada pessoa a construir uma vida mais saudável, possível e sustentável.</p>
+      <div class="timeline" id="timeline">
+        <div class="tl-line" aria-hidden="true"><i id="tlFill"></i></div>
+        <div class="tl-item"><span class="tl-dot" aria-hidden="true"></span><h3><span>antes</span>Marinha do Brasil</h3><p>Entrei para a Marinha e fiz parte do Pelotão Extraordinário, uma turma escolhida pela sua diversidade. Levo de lá a disciplina e o cuidado com as pessoas.</p></div>
+        <div class="tl-item"><span class="tl-dot" aria-hidden="true"></span><h3><span>depois</span>Nutrição clínica</h3><p>Escolhi viver uma nova fase: traduzir ciência em cuidado real, com consultas mais próximas e sem pressa.</p></div>
+        <div class="tl-item"><span class="tl-dot" aria-hidden="true"></span><h3><span>hoje</span>Método CICLO</h3><p>Um jeito de cuidar em que alimentação, corpo, mente e vida caminham juntos.</p></div>
+      </div>
+      <div class="polas">
+        <figure class="pola reveal"><img src="img/fm-marinha-800.webp" width="800" height="1067" loading="lazy" alt="Fernanda Melo de uniforme branco da Marinha do Brasil, batendo continência"><figcaption>Marinha do Brasil</figcaption></figure>
+        <figure class="pola reveal"><img src="img/fm-corrida-800.webp" width="800" height="1066" loading="lazy" alt="Fernanda Melo em uma corrida de rua, fazendo um coração com as mãos"><figcaption>Saúde também é alegria</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL -->
+<section class="sec" id="local" data-tone="creme" aria-labelledby="t-local">
+  <div class="wrap">
+    <h2 class="sec-title reveal" id="t-local">Atendimento presencial em <em>Natal</em></h2>
+    <div class="local-grid">
+      <div class="local-info reveal">
+        <h3>Espaço Clínica</h3>
+        <p class="addr">Av. Rodrigues Alves, 1291<br>Petrópolis, Natal/RN, 59020-200<br><a href="https://www.google.com/maps/search/?api=1&query=Dra.+Fernanda+Melo+Nutricionista+Av.+Rodrigues+Alves+1291+Natal" target="_blank" rel="noopener">Abrir rota no Google Maps</a></p>
+        <table class="hours" aria-label="Horário de atendimento">
+          <tr><td>Segunda a quinta</td><td>8h às 18h</td></tr>
+          <tr><td>Sexta</td><td>8h às 17h</td></tr>
+          <tr><td>Sábado e domingo</td><td>Fechado</td></tr>
+        </table>
+        <div class="chips"><span>Estacionamento no local</span><span>Vaga na rua</span><span>Aceita Pix</span></div>
+      </div>
+      <div class="map reveal-mask" id="map">
+        <iframe title="Mapa do Espaço Clínica em Natal" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=-5.7990261,-35.2025034&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta dark" aria-labelledby="t-cta">
+  <div class="wrap cta-grid">
+    <div class="cta-text">
+      <h2 id="t-cta" class="reveal">Sua primeira consulta começa com uma <em>conversa.</em></h2>
+      <p class="reveal">Me chama no WhatsApp, conta um pouco do que está acontecendo e a gente encontra o melhor horário para você.</p>
+      <a class="btn btn-light magnetic reveal" href="https://wa.me/5584999034169?text=Ol%C3%A1%2C%20Fernanda!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20consulta." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2Zm4.52 11.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></svg>
+        Quero marcar minha consulta</a>
+    </div>
+    <div class="cta-visual" id="ctaVisual">
+      <div class="circle" aria-hidden="true"></div>
+      <picture>
+        <source type="image/webp" srcset="img/fm-perfil-recorte-700.webp 700w, img/fm-perfil-recorte-1200.webp 1200w" sizes="(max-width: 980px) 80vw, 36vw">
+        <img src="img/fm-perfil-recorte-1200.webp" width="1200" height="1247" loading="lazy" alt="Fernanda Melo de óculos, blazer bege e blusa terracota, sorrindo">
+      </picture>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#topo" class="logo"><span class="logo-fm" aria-hidden="true">fm</span><span class="logo-txt"><b>fernanda melo</b><small style="color:var(--caramelo-claro)">CIÊNCIA · ESCUTA · AUTONOMIA</small></span></a>
+        <p style="margin-top:1.4rem;max-width:22rem">Dra. Fernanda Melo, nutricionista clínica. Método CICLO para resistência à insulina, pré-diabetes e diabetes.</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5584999034169" target="_blank" rel="noopener">WhatsApp (84) 99903-4169</a></li>
+          <li><a href="https://www.instagram.com/fernandamelonutricionista/" target="_blank" rel="noopener">Instagram @fernandamelonutricionista</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Endereço</h4>
+        <p>Espaço Clínica<br>Av. Rodrigues Alves, 1291<br>Petrópolis, Natal/RN</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Dra. Fernanda Melo, Nutricionista</span>
+      <span>Este site não substitui consulta. Resultados variam de pessoa para pessoa.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" id="wa" href="https://wa.me/5584999034169?text=Ol%C3%A1%2C%20Fernanda!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2Zm4.52 11.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></svg>
+</a>
+
+<script src="vendor/gsap.min.js" defer></script>
+<script src="vendor/ScrollTrigger.min.js" defer></script>
+<script src="vendor/lenis.min.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const html = document.documentElement;
+  const body = document.body;
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isDesktop = window.matchMedia('(min-width: 981px)').matches;
+  const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  /* nav state */
+  const nav = document.getElementById('nav');
+  const onScrollNav = () => nav.classList.toggle('is-scrolled', window.scrollY > 24);
+  onScrollNav(); window.addEventListener('scroll', onScrollNav, {passive:true});
+
+  /* mobile menu */
+  const menuBtn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  const setMenu = open => {
+    body.classList.toggle('menu-open', open);
+    menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    menu.setAttribute('aria-hidden', !open);
+    if (window.__lenis) open ? window.__lenis.stop() : window.__lenis.start();
+  };
+  menuBtn.addEventListener('click', () => setMenu(!body.classList.contains('menu-open')));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+
+  /* hide floating WhatsApp over CTA and footer */
+  const wa = document.getElementById('wa');
+  const ctaSec = document.querySelector('.cta');
+  if ('IntersectionObserver' in window) {
+    const seen = new Map();
+    const io2 = new IntersectionObserver(es => { es.forEach(e => seen.set(e.target, e.isIntersecting)); wa.classList.toggle('hide', [...seen.values()].some(Boolean)); }, {rootMargin:'0px 0px -30% 0px'});
+    io2.observe(ctaSec); io2.observe(document.querySelector('.hero'));
+  }
+
+  /* section tone (background) */
+  const tones = document.querySelectorAll('[data-tone]');
+
+  if (reduce || !window.gsap) {
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) body.dataset.tone = e.target.dataset.tone; }), {rootMargin:'-50% 0px -50% 0px'});
+      tones.forEach(s => io.observe(s));
+    }
+    return;
+  }
+
+  gsap.registerPlugin(ScrollTrigger);
+  html.classList.add('anim');
+
+  /* smooth scroll */
+  if (window.Lenis) {
+    const lenis = new Lenis({ duration: 1.15, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+    window.__lenis = lenis;
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add(t => lenis.raf(t * 1000));
+    gsap.ticker.lagSmoothing(0);
+    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+      const id = a.getAttribute('href'); const el = id.length > 1 && document.querySelector(id);
+      if (el) { e.preventDefault(); lenis.scrollTo(el, { offset: -70 }); }
+    }));
+  }
+
+  const EASE = 'expo.out';
+
+
+  /* HERO intro */
+  const ring = document.getElementById('heroRing');
+  const line = document.getElementById('heroLine');
+  const lineLen = line.getTotalLength();
+  gsap.set(line, { strokeDasharray: lineLen, strokeDashoffset: lineLen });
+  gsap.set(ring, { strokeDasharray: 1, strokeDashoffset: 1 });
+  const tl = gsap.timeline({ defaults: { ease: EASE } });
+  tl.from('#heroArch', { clipPath: 'inset(100% 0 0 0 round 999px 999px 32px 32px)', duration: 1.2 })
+    .from('#heroPerson', { yPercent: 18, opacity: 0, duration: 1.2 }, '<0.15')
+    .to(ring, { strokeDashoffset: 0, duration: 1.6, ease: 'power2.inOut' }, '<0.1')
+    .from('.hero h1 .w, .hero h1 .rot', { yPercent: 70, opacity: 0, duration: .9, stagger: .05 }, 0.2)
+    .from('.hero-lead, .hero-ctas, .hero-facts', { y: 24, opacity: 0, duration: .9, stagger: .1 }, '-=0.6')
+    .from('#badge', { scale: .4, opacity: 0, rotate: -90, duration: .9 }, '-=0.8')
+    .to(line, { strokeDashoffset: 0, duration: 2.2, ease: 'power2.inOut' }, 0.4);
+
+  /* rotating word */
+  const list = document.querySelector('.rot-list');
+  const words = list.children.length;
+  let wi = 0;
+  setInterval(() => {
+    wi = (wi + 1) % words;
+    gsap.to(list, { yPercent: -100 * wi / words, duration: .9, ease: EASE });
+  }, 2400);
+
+  /* badge spins, faster with scroll velocity */
+  const badgeSvg = document.querySelector('#badge svg');
+  const spin = gsap.to(badgeSvg, { rotate: 360, duration: 18, ease: 'none', repeat: -1 });
+  ScrollTrigger.create({ onUpdate: self => {
+    const v = Math.min(Math.abs(self.getVelocity()) / 300, 6);
+    gsap.to(spin, { timeScale: 1 + v, duration: .3, overwrite: true });
+    gsap.to(spin, { timeScale: 1, duration: 1.2, delay: .3 });
+  }});
+
+  /* hero exits into manifesto with parallax */
+  gsap.to('#heroVisual', { yPercent: -8, scale: 1.03, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+  gsap.to('.hero-text', { yPercent: -18, opacity: .2, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+
+  /* manifesto word fill */
+  const man = document.getElementById('manifesto');
+  const splitWords = el => {
+    const out = [];
+    el.childNodes.forEach(node => {
+      if (node.nodeType === 3) {
+        node.textContent.split(/\s+/).filter(Boolean).forEach(w => { const s = document.createElement('span'); s.className = 'mw'; s.textContent = w; out.push(s); });
+      } else {
+        node.textContent.split(/\s+/).filter(Boolean).forEach(w => { const em = document.createElement('em'); em.className = 'mw'; em.textContent = w; out.push(em); });
+      }
+    });
+    el.innerHTML = ''; out.forEach(s => el.appendChild(s));
+    return out;
+  };
+  const mw = splitWords(man);
+  gsap.fromTo(mw, { opacity: .16 }, { opacity: 1, stagger: .1, ease: 'none',
+    scrollTrigger: { trigger: man, start: 'top 80%', end: 'bottom 40%', scrub: true } });
+
+  /* generic reveals (overlapping entries) */
+  gsap.utils.toArray('.reveal').forEach(el => {
+    gsap.from(el, { y: 40, opacity: 0, duration: .9, ease: EASE, scrollTrigger: { trigger: el, start: 'top 90%' } });
+  });
+  gsap.utils.toArray('.card img, .pola img').forEach(img => {
+    gsap.from(img, { scale: 1.15, duration: 1.2, ease: EASE, scrollTrigger: { trigger: img, start: 'top 90%' } });
+  });
+
+  /* stacked cards */
+  const cards = gsap.utils.toArray('.scard');
+  if (isDesktop) {
+    cards.forEach((c, i) => {
+      if (i === cards.length - 1) return;
+      gsap.fromTo(c, { scale: 1, filter: 'brightness(1)' }, { scale: .92, filter: 'brightness(.9)', ease: 'none',
+        scrollTrigger: { trigger: cards[i + 1], start: 'top bottom', end: 'top 110px', scrub: true } });
+    });
+  }
+
+  /* counters */
+  document.querySelectorAll('.count').forEach(el => {
+    const target = +el.dataset.count, dec = +(el.dataset.dec || 0);
+    const o = { v: 0 };
+    gsap.to(o, { v: target, duration: 1.8, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 88%' },
+      onUpdate: () => { el.textContent = o.v.toFixed(dec).replace('.', ','); } });
+  });
+
+  /* horizontal testimonials */
+  const track = document.getElementById('track');
+  if (isDesktop) {
+    const dist = () => Math.max(0, track.scrollWidth - window.innerWidth);
+    gsap.to(track, { x: () => -dist(), ease: 'none',
+      scrollTrigger: { trigger: '#trackWrap', start: 'center center', end: () => '+=' + dist(), pin: '#depoimentos', scrub: 1, invalidateOnRefresh: true, anticipatePin: 1 } });
+  }
+
+  /* timeline draws */
+  gsap.fromTo('#tlFill', { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '#timeline', start: 'top 75%', end: 'bottom 55%', scrub: true } });
+  document.querySelectorAll('.tl-item').forEach(it => ScrollTrigger.create({ trigger: it, start: 'top 65%', onEnter: () => it.classList.add('on'), onLeaveBack: () => it.classList.remove('on') }));
+
+  /* sobre parallax */
+  gsap.from('.sobre-person', { yPercent: 12, ease: 'none', scrollTrigger: { trigger: '#sobre', start: 'top bottom', end: 'center center', scrub: true } });
+
+  /* map mask reveal */
+  gsap.fromTo('#map', { clipPath: 'circle(8% at 50% 50%)' }, { clipPath: 'circle(75% at 50% 50%)', ease: 'none',
+    scrollTrigger: { trigger: '#map', start: 'top 90%', end: 'top 35%', scrub: true } });
+
+  /* CTA */
+  gsap.from('.cta-visual img', { yPercent: 20, ease: 'none', scrollTrigger: { trigger: '.cta', start: 'top bottom', end: 'bottom bottom', scrub: true } });
+  gsap.from('.cta-visual .circle', { scale: .6, ease: 'none', scrollTrigger: { trigger: '.cta', start: 'top bottom', end: 'center center', scrub: true } });
+
+  /* custom cursor + magnetic buttons (desktop only) */
+  if (fine && isDesktop) {
+    body.classList.add('has-cursor');
+    const dot = document.querySelector('.cursor'), ringEl = document.querySelector('.cursor-ring');
+    const dx = gsap.quickTo(dot, 'x', { duration: .1 }), dy = gsap.quickTo(dot, 'y', { duration: .1 });
+    const rx = gsap.quickTo(ringEl, 'x', { duration: .5, ease: 'power3' }), ry = gsap.quickTo(ringEl, 'y', { duration: .5, ease: 'power3' });
+    window.addEventListener('mousemove', e => { dx(e.clientX); dy(e.clientY); rx(e.clientX); ry(e.clientY); });
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => ringEl.classList.add('hover'));
+      el.addEventListener('mouseleave', () => ringEl.classList.remove('hover'));
+    });
+    document.querySelectorAll('.magnetic, .wa').forEach(btn => {
+      const mx = gsap.quickTo(btn, 'x', { duration: .6, ease: 'elastic.out(1, .4)' });
+      const my = gsap.quickTo(btn, 'y', { duration: .6, ease: 'elastic.out(1, .4)' });
+      btn.addEventListener('mousemove', e => { const r = btn.getBoundingClientRect(); mx((e.clientX - r.left - r.width / 2) * .3); my((e.clientY - r.top - r.height / 2) * .4); });
+      btn.addEventListener('mouseleave', () => { mx(0); my(0); });
+    });
+  }
+
+  /* section tones last, so pin spacing is already known */
+  tones.forEach(s => ScrollTrigger.create({
+    trigger: s, start: 'top 70%', end: 'bottom 70%', refreshPriority: -1,
+    onToggle: self => { if (self.isActive) body.dataset.tone = s.dataset.tone; }
+  }));
+  ScrollTrigger.sort();
+
+  window.addEventListener('load', () => ScrollTrigger.refresh());
+});
+</script>
+</body>
+</html>
