@@ -6,6 +6,7 @@
 <title>Dra. Fernanda Melo | Nutricionista para Diabetes e Resistência à Insulina em Natal</title>
 <meta name="description" content="Nutricionista clínica em Natal/RN. Método CICLO para quem tem resistência à insulina, pré-diabetes ou diabetes. Consulta com mais de 1 hora e plano que cabe na sua rotina. Agende pelo WhatsApp.">
 <meta name="theme-color" content="#3F4722">
+<script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("js-intro");setTimeout(function(){if(!window.gsap)document.documentElement.classList.remove("js-intro")},5000)}</script>
 <link rel="canonical" href="https://site-fernanda-melo.vercel.app/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -19,7 +20,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,600&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,600&family=Lustria&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="img/fm-hero-recorte-1200.webp" imagesrcset="img/fm-hero-recorte-700.webp 700w, img/fm-hero-recorte-1200.webp 1144w" imagesizes="(max-width: 860px) 90vw, 42vw">
 
 <script type="application/ld+json">
@@ -114,11 +115,14 @@ h1 em,h2 em,h3 em{font-style:italic;color:var(--caramelo);font-weight:400}
 .nav{position:fixed;top:0;left:0;right:0;z-index:80;transition:background-color .5s var(--ease), box-shadow .5s var(--ease), color .5s}
 .nav.is-scrolled{background:rgba(251,246,238,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(58,42,32,.08)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:76px}
-.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--cafe);min-height:48px}
-.logo-fm{font-family:var(--serif);font-style:italic;font-size:1.9rem;line-height:1;color:var(--caramelo);font-weight:300;letter-spacing:-.04em}
-.logo-txt{display:flex;flex-direction:column;line-height:1.1}
-.logo-txt b{font-family:var(--serif);font-weight:400;font-size:1.15rem;letter-spacing:-.01em}
-.logo-txt small{font-size:.6rem;letter-spacing:.28em;font-weight:700;color:var(--oliva)}
+.logo{display:flex;align-items:center;text-decoration:none;min-height:48px;--ls:#9A7056;--lw:#8B4F2C;--lt:#5F6358}
+.logo-svg{width:clamp(200px,19vw,280px);height:auto;overflow:visible}
+.logo-svg .ls,.intro .ls,.mono use{fill:var(--ls,#9A7056)}
+.logo-svg .lw,.intro .lw{fill:var(--lw,#8B4F2C)}
+.logo-svg .lt,.intro .lt{fill:var(--lt,#5F6358)}
+.logo-light{--ls:#D9B496;--lw:#FBF6EE;--lt:rgba(251,246,238,.7)}
+.logo-light .logo-svg{width:min(320px,100%)}
+.mono{display:block;height:1.2em;width:auto;overflow:visible}
 .nav-links{display:flex;align-items:center;gap:2rem;list-style:none;margin:0;padding:0}
 .nav-links a{text-decoration:none;font-weight:700;font-size:.88rem;position:relative;padding:.6em 0}
 .nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:.35em;height:1.5px;background:var(--caramelo);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
@@ -135,7 +139,8 @@ h1 em,h2 em,h3 em{font-style:italic;color:var(--caramelo);font-weight:400}
 .mobile-menu a{font-family:var(--serif);font-size:2.4rem;text-decoration:none;line-height:1.5}
 .mobile-menu .btn{margin-top:2rem;align-self:flex-start;font-family:var(--sans);font-size:1rem}
 .menu-open .nav{color:var(--creme)}
-.menu-open .nav .logo,.menu-open .menu-btn{color:var(--creme)}
+.menu-open .menu-btn{color:var(--creme)}
+.menu-open .nav .logo{--ls:#D9B496;--lw:#FBF6EE;--lt:rgba(251,246,238,.7)}
 .menu-open .nav.is-scrolled{background:transparent;box-shadow:none;backdrop-filter:none}
 
 /* HERO */
@@ -163,7 +168,8 @@ h1 em,h2 em,h3 em{font-style:italic;color:var(--caramelo);font-weight:400}
 .badge{position:absolute;z-index:3;left:-6%;bottom:12%;width:clamp(110px,11vw,150px);aspect-ratio:1;border-radius:50%;background:var(--creme);box-shadow:0 18px 40px -18px rgba(58,42,32,.5);display:grid;place-items:center}
 .badge svg{position:absolute;inset:0;width:100%;height:100%}
 .badge text{font-family:var(--sans);font-weight:700;font-size:8px;letter-spacing:.12em;fill:var(--oliva)}
-.badge-core{font-family:var(--serif);font-style:italic;font-size:1.9rem;color:var(--caramelo);line-height:1}
+.badge-core{display:grid;place-items:center;--ls:var(--caramelo)}
+.badge-core .mono{height:58px}
 .hero-line{position:absolute;left:0;right:0;bottom:28px;z-index:0;pointer-events:none;width:100%;height:120px}
 .hero-line path,.thread path{fill:none;stroke:var(--caramelo);stroke-width:1.3;stroke-linecap:round;opacity:.55}
 
@@ -183,7 +189,7 @@ section{position:relative}
 .manifesto p.big .mw{display:inline-block;margin-right:.22em}
 .manifesto p.big em{font-style:italic;color:var(--caramelo-claro)}
 .manifesto .sign{display:flex;align-items:center;gap:1rem;margin-top:3rem;font-size:.95rem;color:rgba(251,246,238,.7)}
-.manifesto .sign span{font-family:var(--serif);font-style:italic;font-size:1.6rem;color:var(--caramelo-claro)}
+.manifesto .sign .mono{height:3rem;flex:none;--ls:var(--caramelo-claro)}
 
 /* PARA QUEM (bento) */
 .bento{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:minmax(120px,auto);gap:18px;margin-top:clamp(40px,6vw,72px)}
@@ -320,7 +326,7 @@ section{position:relative}
 /* FOOTER */
 footer{background:var(--cafe);color:rgba(251,246,238,.75);padding:64px 0 120px;font-size:.92rem}
 .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.4rem}
-footer .logo{color:var(--creme)}
+
 footer h4{font-family:var(--sans);font-size:.95rem;color:var(--creme);margin:0 0 .8rem}
 footer a{text-decoration:none}
 footer a:hover{color:var(--creme)}
@@ -328,16 +334,25 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}
 footer ul a{display:inline-block;padding:.65rem 0}
 .foot-bottom{margin-top:48px;padding-top:24px;border-top:1px solid rgba(251,246,238,.14);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.82rem}
 
+/* INTRO */
+.intro{position:fixed;inset:0;z-index:200;background:var(--creme);display:none;place-items:center;padding:0 var(--gutter)}
+.js-intro .intro{display:grid}
+.js-intro body{overflow:hidden}
+.intro-logo{width:min(760px,92vw);height:auto;overflow:visible}
+.intro::after{content:"";position:absolute;left:50%;bottom:12%;width:120px;height:1px;background:rgba(58,42,32,.15);transform:translateX(-50%)}
+.intro .bar{position:absolute;left:50%;bottom:12%;width:120px;height:1px;background:var(--caramelo);transform-origin:left;transform:translateX(-50%) scaleX(0);z-index:1}
+
 /* WhatsApp float */
-.wa{position:fixed;right:20px;bottom:20px;z-index:85;width:60px;height:60px;border-radius:50%;background:var(--oliva);color:var(--creme);display:grid;place-items:center;
-  box-shadow:0 16px 32px -12px rgba(52,59,28,.7);text-decoration:none;transition:transform .5s var(--ease), opacity .5s;}
-.wa svg{width:28px;height:28px}
-.wa::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:1.2px solid var(--caramelo);opacity:.7;animation:pulse 2.8s var(--ease) infinite}
+.wa{position:fixed;right:20px;bottom:20px;z-index:85;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;
+  box-shadow:0 14px 30px -10px rgba(18,140,126,.55);text-decoration:none;transition:transform .5s var(--ease), opacity .5s;}
+.wa svg{width:30px;height:30px}
+.wa::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:1.5px solid #25D366;opacity:.7;animation:pulse 2.8s var(--ease) infinite}
 @keyframes pulse{0%{transform:scale(.9);opacity:.8}100%{transform:scale(1.35);opacity:0}}
 .wa.hide{transform:scale(.6);opacity:0;pointer-events:none}
 
 /* cursor */
-.cursor,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:100;border-radius:50%;display:none}
+.cursor,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:100;border-radius:50%;display:none;opacity:0;transition:opacity .4s}
+.cursor-on .cursor,.cursor-on .cursor-ring{opacity:1}
 .cursor{width:8px;height:8px;background:var(--caramelo);margin:-4px 0 0 -4px}
 .cursor-ring{width:40px;height:40px;border:1.2px solid var(--caramelo);margin:-20px 0 0 -20px;transition:width .4s var(--ease),height .4s var(--ease),margin .4s var(--ease),background-color .4s}
 .cursor-ring.hover{width:72px;height:72px;margin:-36px 0 0 -36px;background:rgba(184,105,42,.12)}
@@ -370,7 +385,7 @@ footer ul a{display:inline-block;padding:.65rem 0}
   .hero-facts{gap:.8rem 1.6rem}
   .hero-facts b{font-size:1.4rem}
   .badge{left:-4%;bottom:6%;width:96px}
-  .badge-core{font-size:1.4rem}
+  .badge-core .mono{height:40px}
   .c-list ul{grid-template-columns:1fr}
   .scard{grid-template-columns:1fr;position:relative;top:auto;min-height:auto;gap:18px}
   .scard .num{width:84px;font-size:3rem}
@@ -396,6 +411,28 @@ footer ul a{display:inline-block;padding:.65rem 0}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <path id="lg-script" fill-rule="evenodd" d="M1082,1205C1073,1200 1071,1193 1069,1171C1067,1150 1070,1123 1076,1098C1079,1085 1083,1069 1086,1056C1089,1041 1094,1022 1099,1004C1101,998 1104,988 1105,982C1107,977 1110,966 1113,958C1116,951 1119,942 1119,940C1120,938 1121,932 1122,929C1122,925 1124,919 1124,916C1125,912 1126,908 1127,906C1129,904 1132,896 1134,889C1138,876 1143,861 1147,852C1148,850 1150,844 1152,840C1153,837 1156,831 1157,828C1161,821 1167,804 1167,801C1167,796 1166,796 1151,795C1140,794 1137,794 1133,792C1125,788 1122,780 1126,772C1130,764 1138,762 1158,762C1174,762 1179,761 1183,756C1185,753 1197,723 1202,710C1204,704 1206,698 1208,695C1209,692 1211,687 1212,682C1213,677 1216,670 1218,667C1219,663 1221,659 1221,658C1221,658 1222,655 1223,652C1225,650 1227,643 1229,637C1232,631 1234,625 1235,624C1236,622 1237,618 1238,616C1239,614 1240,609 1242,607C1243,604 1245,600 1246,597C1247,594 1249,589 1251,586C1253,584 1256,577 1259,571C1265,554 1268,548 1270,546C1271,544 1276,533 1280,524C1281,521 1283,516 1284,514C1286,511 1288,506 1290,501C1293,493 1305,469 1310,462C1311,460 1312,458 1312,457C1312,456 1313,453 1315,450C1317,448 1320,442 1321,439C1323,435 1326,429 1328,425C1330,421 1332,418 1332,418C1332,417 1334,413 1336,410C1339,406 1344,397 1347,390C1351,382 1355,375 1356,374C1357,372 1360,366 1362,361C1365,352 1366,350 1370,347C1372,345 1375,342 1377,339C1378,336 1381,331 1384,327C1392,317 1398,308 1403,299C1405,294 1410,288 1412,285C1415,282 1419,277 1421,274C1423,272 1427,268 1430,265C1433,263 1438,257 1440,253C1447,244 1460,233 1478,222C1496,212 1515,211 1519,220C1520,222 1522,224 1523,225C1530,229 1533,251 1528,265C1527,269 1526,273 1526,273C1526,275 1521,293 1517,302C1515,307 1507,323 1493,348C1488,357 1480,368 1473,377C1469,381 1464,388 1461,392C1453,404 1448,410 1434,424C1427,431 1419,439 1417,442C1411,449 1379,479 1372,485C1368,487 1363,491 1360,494C1358,497 1353,501 1350,503C1346,506 1342,509 1341,510C1338,514 1332,518 1324,523C1321,525 1313,531 1307,536C1300,541 1292,547 1288,550C1280,554 1276,561 1275,572C1275,577 1274,578 1272,580C1268,583 1264,592 1258,608C1256,614 1253,620 1252,623C1251,625 1250,629 1249,631C1248,633 1247,638 1245,640C1243,643 1241,647 1240,650C1239,653 1237,658 1236,662C1233,667 1231,671 1226,688C1224,692 1221,697 1219,701C1215,707 1209,725 1207,734C1207,737 1206,740 1203,743C1196,750 1195,759 1200,769C1202,774 1202,774 1206,774C1211,774 1240,764 1246,760C1254,755 1268,749 1279,745C1285,743 1290,741 1293,738C1302,732 1310,727 1330,717C1335,714 1342,710 1346,708C1350,705 1354,703 1355,702C1357,701 1360,698 1363,695C1365,692 1369,690 1374,688C1382,685 1412,666 1417,661C1419,659 1427,653 1434,649C1453,635 1457,633 1466,624C1471,620 1477,614 1480,612C1493,604 1496,601 1505,593C1510,588 1514,584 1515,584C1516,584 1518,582 1520,579C1522,576 1526,571 1529,568C1535,562 1542,550 1544,542C1545,538 1547,533 1549,531C1551,528 1552,524 1553,522C1556,512 1569,496 1573,496C1577,496 1580,501 1580,506C1579,512 1571,530 1562,543C1556,552 1550,563 1548,571C1547,573 1543,582 1538,592C1534,602 1528,614 1525,620C1522,625 1520,632 1519,634C1518,639 1515,647 1511,654C1508,660 1506,675 1507,679C1508,682 1512,682 1516,677C1520,672 1523,669 1553,640C1579,614 1590,604 1596,600C1598,599 1603,595 1608,592C1612,589 1618,585 1621,584C1624,582 1628,580 1629,580C1646,570 1650,569 1662,568C1675,568 1677,568 1685,580C1692,589 1693,592 1692,607C1691,616 1690,621 1685,637C1682,645 1683,647 1687,648C1689,648 1691,647 1697,640C1702,636 1707,631 1710,629C1712,627 1719,621 1724,616C1729,611 1735,605 1738,604C1740,602 1745,598 1750,593C1763,580 1768,575 1774,572C1776,571 1782,567 1786,563C1792,556 1802,549 1810,545C1812,544 1816,541 1820,539C1833,528 1844,526 1854,531C1866,537 1863,563 1850,584C1845,591 1842,596 1840,604C1839,607 1836,615 1833,621C1821,647 1819,655 1819,671C1820,683 1822,688 1831,697C1838,705 1843,707 1858,709C1878,712 1916,710 1936,705C1942,704 1952,701 1957,700C1962,699 1968,698 1970,697C1974,695 1987,691 1994,689C1999,688 2028,677 2051,668C2053,667 2058,666 2060,665C2062,665 2072,661 2081,656C2090,652 2100,648 2104,646C2107,645 2115,641 2122,638C2141,629 2150,625 2154,624C2156,624 2159,623 2160,622C2165,618 2176,612 2180,612C2181,611 2186,609 2190,608C2205,601 2216,596 2225,593C2230,591 2239,587 2246,584C2252,581 2259,578 2261,577C2263,577 2269,574 2274,573C2278,571 2283,569 2285,569C2287,568 2293,566 2299,564C2305,562 2312,560 2314,559C2317,559 2323,557 2326,555C2334,553 2344,550 2354,548C2367,546 2382,543 2390,541C2400,539 2409,538 2430,536C2446,534 2516,535 2520,537C2522,538 2528,539 2534,539C2558,541 2629,566 2640,576C2642,578 2646,580 2650,581C2653,583 2658,585 2661,586C2674,591 2677,593 2680,595C2681,596 2686,599 2690,601C2695,603 2699,606 2700,607C2701,608 2706,610 2710,612C2715,615 2725,620 2734,625C2742,629 2753,635 2759,638C2765,641 2774,645 2779,647C2784,649 2791,652 2795,654C2799,656 2804,659 2806,659C2808,660 2811,662 2812,662C2813,663 2817,665 2821,665C2825,666 2832,668 2838,670C2844,672 2852,675 2856,676C2868,679 2878,682 2881,683C2882,683 2886,684 2891,685C2896,686 2906,688 2913,690C2921,692 2929,693 2931,693C2933,693 2942,694 2950,696C2965,699 2966,699 3004,700C3046,700 3084,699 3096,697C3101,696 3110,695 3116,694C3123,693 3130,692 3132,691C3135,691 3141,690 3146,689C3151,689 3157,688 3158,687C3162,685 3186,680 3189,680C3191,680 3195,679 3200,678C3220,671 3225,670 3231,669C3234,669 3238,668 3240,667C3241,666 3245,665 3248,665C3251,664 3256,663 3258,661C3262,660 3265,659 3270,658C3275,658 3279,657 3282,655C3284,654 3292,651 3301,648C3315,643 3324,640 3344,632C3347,631 3351,630 3352,630C3353,630 3355,629 3357,628C3365,623 3377,618 3393,613C3396,612 3402,610 3406,608C3409,606 3416,604 3420,603C3424,602 3431,599 3436,596C3441,594 3447,591 3450,590C3468,584 3474,582 3484,577C3498,570 3511,565 3513,565C3514,565 3517,564 3520,563C3528,559 3542,553 3551,550C3555,548 3562,546 3566,545C3573,542 3588,536 3596,533C3598,533 3606,530 3614,527C3622,524 3633,520 3638,519C3642,517 3649,515 3652,514C3664,510 3683,505 3686,505C3692,505 3692,509 3686,510C3684,511 3681,512 3680,513C3678,514 3674,515 3671,516C3661,518 3583,544 3575,549C3573,549 3570,550 3567,551C3564,552 3561,553 3559,554C3558,554 3550,558 3542,561C3533,564 3525,568 3523,569C3516,574 3507,578 3501,580C3492,582 3483,585 3477,588C3469,592 3443,603 3436,605C3433,605 3428,607 3426,609C3423,610 3417,613 3412,614C3406,616 3396,620 3376,628C3374,629 3369,631 3367,631C3365,632 3361,633 3360,634C3357,636 3352,638 3342,642C3329,646 3309,654 3304,655C3302,656 3297,658 3292,659C3287,659 3282,661 3280,662C3275,666 3253,673 3236,676C3233,677 3226,678 3221,680C3209,684 3204,685 3180,690C3176,691 3171,692 3170,692C3168,692 3164,693 3161,693C3145,698 3135,700 3128,700C3125,701 3119,702 3117,702C3114,704 3106,704 3095,705C3085,706 3070,707 3060,707C3036,710 2995,710 2983,708C2978,707 2968,706 2960,705C2941,703 2924,701 2908,697C2902,695 2892,693 2886,691C2861,686 2841,680 2828,674C2825,673 2820,671 2818,671C2815,670 2809,668 2804,666C2800,664 2793,661 2789,660C2785,659 2779,656 2775,654C2771,652 2767,649 2764,649C2759,647 2727,631 2722,628C2720,627 2715,624 2711,622C2706,620 2701,617 2700,616C2694,612 2683,606 2666,597C2656,592 2648,587 2647,587C2645,585 2635,580 2633,580C2632,580 2604,568 2600,565C2598,564 2592,562 2586,561C2580,559 2571,556 2566,554C2561,552 2554,550 2551,550C2548,550 2544,549 2541,548C2537,547 2524,545 2507,544C2501,543 2490,543 2484,542C2464,540 2411,545 2386,550C2367,554 2354,557 2350,558C2349,559 2342,560 2334,562C2327,563 2318,566 2314,568C2308,570 2302,573 2266,584C2247,591 2245,591 2232,598C2226,601 2219,604 2216,605C2208,609 2191,616 2181,621C2176,623 2170,625 2168,626C2166,627 2163,628 2162,628C2160,630 2144,638 2140,639C2138,640 2135,641 2132,643C2130,644 2125,646 2120,648C2116,649 2110,652 2108,654C2105,655 2097,659 2091,661C2085,663 2076,667 2072,669C2067,672 2059,675 2054,676C2050,678 2039,682 2030,685C2022,688 2013,692 2010,693C2007,694 2002,695 2000,696C1998,698 1989,700 1980,702C1971,705 1963,707 1960,708C1958,709 1950,711 1942,712C1934,714 1924,716 1920,717C1911,719 1877,722 1866,721C1847,719 1822,708 1815,699C1806,687 1804,658 1812,640C1814,636 1817,629 1819,624C1821,619 1823,614 1823,612C1824,611 1825,608 1826,605C1827,602 1830,596 1833,591C1841,577 1845,564 1844,553C1844,548 1844,544 1844,543C1841,539 1827,545 1816,554C1812,557 1808,560 1806,561C1799,565 1786,574 1780,580C1776,583 1768,591 1761,597C1754,603 1741,615 1732,624C1692,663 1692,664 1684,667C1675,672 1673,672 1668,668C1665,665 1665,665 1665,657C1666,652 1667,647 1668,643C1676,626 1677,621 1679,612C1682,593 1680,586 1672,581C1662,576 1646,579 1630,590C1627,592 1620,596 1614,600C1600,608 1555,649 1542,666C1539,669 1534,675 1530,680C1525,685 1518,694 1513,701C1499,719 1491,724 1484,718C1481,716 1481,716 1481,707C1482,697 1488,679 1499,654C1502,648 1505,639 1506,635C1507,631 1509,627 1510,625C1513,621 1517,612 1519,604C1520,600 1519,597 1517,597C1515,597 1508,602 1496,614C1490,619 1480,627 1473,632C1465,637 1457,645 1452,649C1448,654 1443,659 1441,660C1437,662 1421,672 1414,678C1400,688 1389,696 1378,703C1370,707 1362,713 1360,715C1357,718 1350,722 1345,724C1340,727 1332,732 1328,735C1322,739 1319,741 1311,743C1306,745 1299,748 1296,749C1285,756 1266,765 1257,767C1252,769 1246,771 1244,772C1241,773 1237,774 1236,774C1230,776 1216,781 1214,783C1211,785 1212,789 1217,797C1223,807 1233,827 1235,833C1241,856 1239,909 1230,952C1228,958 1227,965 1226,968C1226,970 1224,976 1222,981C1220,986 1218,995 1216,1001C1214,1007 1211,1015 1210,1019C1204,1029 1196,1052 1196,1056C1196,1058 1195,1060 1193,1062C1190,1066 1176,1092 1167,1112C1160,1125 1152,1140 1149,1144C1147,1145 1144,1151 1142,1156C1136,1167 1131,1174 1124,1183C1120,1187 1116,1192 1114,1194C1108,1204 1091,1209 1082,1205ZM1097,1190C1103,1187 1109,1183 1110,1180C1112,1178 1114,1175 1116,1172C1118,1170 1121,1165 1124,1160C1126,1156 1129,1151 1130,1150C1132,1148 1136,1142 1140,1135C1143,1129 1149,1119 1153,1114C1156,1108 1160,1102 1161,1100C1161,1097 1163,1094 1164,1093C1165,1091 1168,1085 1170,1080C1172,1074 1175,1068 1176,1067C1177,1065 1180,1060 1181,1054C1183,1049 1186,1042 1187,1038C1189,1035 1191,1029 1193,1025C1194,1021 1196,1016 1197,1014C1198,1012 1200,1006 1201,1001C1202,995 1205,988 1207,984C1209,979 1211,974 1212,965C1214,958 1216,950 1217,947C1219,942 1221,931 1224,905C1227,878 1223,829 1217,819C1216,817 1215,815 1214,812C1212,807 1209,801 1203,795C1199,789 1199,789 1194,789C1192,790 1189,791 1187,792C1184,794 1177,808 1173,820C1168,835 1167,840 1161,854C1159,860 1156,868 1155,872C1150,889 1139,925 1133,940C1131,945 1129,952 1128,957C1127,961 1126,966 1125,967C1123,971 1118,986 1117,992C1116,996 1114,1003 1113,1008C1110,1017 1106,1031 1101,1050C1100,1055 1098,1062 1098,1064C1097,1067 1096,1072 1095,1075C1094,1080 1090,1099 1088,1108C1087,1112 1085,1125 1082,1148C1079,1166 1082,1183 1088,1189C1091,1192 1093,1193 1097,1190ZM458,682C427,680 417,679 416,679C416,678 411,678 406,677C401,676 392,675 386,673C381,672 372,670 366,670C354,668 340,665 334,663C330,661 317,658 306,656C302,655 296,654 292,652C289,651 281,649 274,648C268,647 261,645 259,644C256,643 251,642 248,641C244,640 238,638 235,638C224,635 216,633 209,631C204,630 200,629 200,628C199,627 194,626 189,626C184,625 177,623 175,623C172,622 169,621 166,620C164,620 161,619 160,618C158,617 149,616 139,614C129,612 116,610 111,609C106,607 97,606 92,605C87,605 81,604 79,603C77,602 72,601 68,601C65,600 58,599 53,598C47,597 37,596 22,595C0,594 0,594 0,590C0,585 2,585 22,588C30,589 39,590 44,590C54,591 70,593 88,597C95,598 106,600 112,600C117,601 122,602 123,602C123,603 128,603 132,604C137,605 146,607 151,609C157,611 164,613 166,613C169,614 176,615 182,617C187,619 192,620 193,620C194,620 197,621 200,622C203,623 208,624 210,624C215,625 228,628 238,632C240,632 246,634 251,635C267,638 277,641 281,642C283,643 291,645 298,647C305,648 314,650 318,652C321,653 327,655 331,655C340,656 358,660 362,662C367,663 396,668 410,669C416,670 425,671 430,671C464,677 543,677 572,671C578,670 587,669 591,668C608,666 619,664 625,661C628,660 632,659 632,659C634,659 646,654 656,650C660,648 664,647 666,646C671,646 716,623 719,620C723,617 733,611 744,605C750,602 757,598 759,596C762,594 777,586 790,580C793,579 797,576 798,575C802,572 811,568 821,565C824,564 828,562 830,562C832,561 837,559 843,559C848,558 855,557 858,556C868,553 913,554 922,557C924,558 929,559 932,560C942,562 957,567 964,570C966,572 970,573 973,574C975,574 978,576 979,578C982,580 982,580 978,580C975,579 972,578 970,577C967,575 964,574 962,574C952,572 937,568 932,566C920,562 915,561 902,561C878,559 854,563 831,570C801,580 802,579 788,588C785,590 777,595 759,604C756,606 752,608 751,609C747,613 733,622 726,625C723,626 719,629 716,631C710,635 687,647 682,649C679,650 674,652 670,654C667,656 661,659 657,660C653,660 645,663 639,665C620,671 587,679 570,680C545,683 537,683 508,683C487,684 471,683 458,682ZM1017,603C1014,601 1007,598 1002,595C994,591 987,585 988,584C989,583 998,585 1000,587C1002,589 1005,590 1007,591C1009,592 1014,594 1018,597C1021,600 1025,602 1026,603C1033,608 1026,608 1017,603ZM1306,522C1308,521 1314,517 1318,513C1323,510 1329,506 1331,504C1334,503 1341,497 1347,491C1354,485 1362,478 1366,474C1370,470 1382,459 1392,449C1402,439 1414,427 1418,424C1426,416 1437,404 1442,398C1443,395 1448,390 1452,386C1459,378 1466,368 1473,357C1474,354 1478,349 1481,346C1483,342 1487,336 1489,332C1491,328 1495,320 1498,314C1504,304 1509,291 1511,279C1512,276 1514,271 1515,267C1521,255 1519,237 1511,229C1503,222 1473,235 1458,253C1456,255 1452,259 1448,262C1445,265 1441,268 1441,271C1440,272 1437,276 1435,279C1432,282 1428,288 1426,292C1423,296 1418,302 1416,305C1413,309 1411,312 1411,312C1411,313 1409,315 1407,317C1405,320 1401,325 1399,330C1394,337 1389,346 1372,371C1369,376 1363,386 1360,394C1356,401 1351,411 1348,416C1345,421 1340,429 1338,434C1336,439 1332,445 1330,448C1325,456 1310,489 1308,498C1308,499 1306,502 1304,504C1299,510 1295,521 1298,524C1300,526 1301,525 1306,522Z"/>
+    <g id="lg-word" font-family="Lustria, Georgia, serif" font-size="196">
+      <text x="121" y="1000" textLength="728" lengthAdjust="spacingAndGlyphs">fernanda</text>
+      <text x="2506" y="1000" textLength="437" lengthAdjust="spacingAndGlyphs">melo</text>
+    </g>
+    <g id="lg-tag" font-family="Montserrat, Arial, sans-serif" font-weight="500" font-size="64">
+      <text x="128" y="1120" textLength="719" lengthAdjust="spacing">NUTRICIONISTA</text>
+      <text x="2508" y="1120" textLength="1044" lengthAdjust="spacing">CIÊNCIA · ESCUTA · AUTONOMIA</text>
+    </g>
+  </defs>
+</svg>
+<div class="intro" id="intro" aria-hidden="true">
+  <span class="bar" id="introBar"></span>
+  <svg class="intro-logo" viewBox="0 200 3690 1020">
+    <defs><clipPath id="writeClip"><rect id="writeRect" x="0" y="0" width="3690" height="1400"/></clipPath></defs>
+    <g clip-path="url(#writeClip)"><use href="#lg-script" class="ls"/></g>
+    <g class="intro-word"><use href="#lg-word" class="lw"/></g>
+    <g class="intro-tag"><use href="#lg-tag" class="lt"/></g>
+  </svg>
+</div>
 <div class="grain" aria-hidden="true"></div>
 <div class="cursor" aria-hidden="true"></div>
 <div class="cursor-ring" aria-hidden="true"></div>
@@ -403,8 +440,7 @@ footer ul a{display:inline-block;padding:.65rem 0}
 <header class="nav" id="nav">
   <div class="wrap nav-in">
     <a href="#topo" class="logo" aria-label="Fernanda Melo, nutricionista. Voltar ao início">
-      <span class="logo-fm" aria-hidden="true">fm</span>
-      <span class="logo-txt"><b>fernanda melo</b><small>NUTRICIONISTA</small></span>
+      <svg class="logo-svg" viewBox="0 200 3690 1020" aria-hidden="true"><use href="#lg-script" class="ls"/><use href="#lg-word" class="lw"/><use href="#lg-tag" class="lt"/></svg>
     </a>
     <nav aria-label="Principal">
       <ul class="nav-links">
@@ -443,7 +479,7 @@ footer ul a{display:inline-block;padding:.65rem 0}
       <p class="hero-lead">Sou a <strong>Fernanda Melo</strong>, nutricionista clínica em Natal. Cuido de quem tem <strong>resistência à insulina, pré-diabetes e diabetes</strong> com uma consulta longa, escuta de verdade e um plano feito com a comida que você já come.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary magnetic" href="https://wa.me/5584999034169?text=Ol%C3%A1%2C%20Fernanda!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20consulta." target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 8.23 8.24c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
           Agendar pelo WhatsApp</a>
         <a class="btn btn-ghost" href="#consulta"><span>Ver como é a consulta</span></a>
       </div>
@@ -464,7 +500,7 @@ footer ul a{display:inline-block;padding:.65rem 0}
       <div class="badge" id="badge" aria-hidden="true">
         <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
           <text><textPath href="#circ" textLength="284" lengthAdjust="spacingAndGlyphs">MÉTODO CICLO · CIÊNCIA · ESCUTA · AUTONOMIA · </textPath></text></svg>
-        <span class="badge-core">fm</span>
+        <span class="badge-core"><svg class="mono" viewBox="1040 200 860 1020" aria-hidden="true"><use href="#lg-script"/></svg></span>
       </div>
     </div>
   </div>
@@ -474,7 +510,7 @@ footer ul a{display:inline-block;padding:.65rem 0}
 <section class="manifesto dark" aria-label="Manifesto">
   <div class="wrap">
     <p class="big" id="manifesto">Não existe plano alimentar sem um <em>plano de vida.</em></p>
-    <div class="sign"><span>fm</span> O que você vive influencia o que você come. Por isso a sua rotina entra na consulta.</div>
+    <div class="sign"><svg class="mono" viewBox="1040 200 860 1020" aria-hidden="true"><use href="#lg-script"/></svg> O que você vive influencia o que você come. Por isso a sua rotina entra na consulta.</div>
   </div>
 </section>
 
@@ -642,7 +678,7 @@ footer ul a{display:inline-block;padding:.65rem 0}
       <h2 id="t-cta" class="reveal">Sua primeira consulta começa com uma <em>conversa.</em></h2>
       <p class="reveal">Me chama no WhatsApp, conta um pouco do que está acontecendo e a gente encontra o melhor horário para você.</p>
       <a class="btn btn-light magnetic reveal" href="https://wa.me/5584999034169?text=Ol%C3%A1%2C%20Fernanda!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20consulta." target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2Zm4.52 11.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
         Quero marcar minha consulta</a>
     </div>
     <div class="cta-visual" id="ctaVisual">
@@ -660,7 +696,7 @@ footer ul a{display:inline-block;padding:.65rem 0}
   <div class="wrap">
     <div class="foot">
       <div>
-        <a href="#topo" class="logo"><span class="logo-fm" aria-hidden="true">fm</span><span class="logo-txt"><b>fernanda melo</b><small style="color:var(--caramelo-claro)">CIÊNCIA · ESCUTA · AUTONOMIA</small></span></a>
+        <a href="#topo" class="logo logo-light" aria-label="Fernanda Melo, nutricionista. Voltar ao início"><svg class="logo-svg" viewBox="0 200 3690 1020" aria-hidden="true"><use href="#lg-script" class="ls"/><use href="#lg-word" class="lw"/><use href="#lg-tag" class="lt"/></svg></a>
         <p style="margin-top:1.4rem;max-width:22rem">Dra. Fernanda Melo, nutricionista clínica. Método CICLO para resistência à insulina, pré-diabetes e diabetes.</p>
       </div>
       <div>
@@ -683,7 +719,7 @@ footer ul a{display:inline-block;padding:.65rem 0}
 </footer>
 
 <a class="wa" id="wa" href="https://wa.me/5584999034169?text=Ol%C3%A1%2C%20Fernanda!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2Zm4.52 11.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></svg>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
 <script src="vendor/gsap.min.js" defer></script>
@@ -729,6 +765,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const tones = document.querySelectorAll('[data-tone]');
 
   if (reduce || !window.gsap) {
+    html.classList.remove('js-intro');
     if ('IntersectionObserver' in window) {
       const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) body.dataset.tone = e.target.dataset.tone; }), {rootMargin:'-50% 0px -50% 0px'});
       tones.forEach(s => io.observe(s));
@@ -761,7 +798,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lineLen = line.getTotalLength();
   gsap.set(line, { strokeDasharray: lineLen, strokeDashoffset: lineLen });
   gsap.set(ring, { strokeDasharray: 1, strokeDashoffset: 1 });
-  const tl = gsap.timeline({ defaults: { ease: EASE } });
+  const tl = gsap.timeline({ defaults: { ease: EASE }, paused: true });
   tl.from('#heroArch', { clipPath: 'inset(100% 0 0 0 round 999px 999px 32px 32px)', duration: 1.2 })
     .from('#heroPerson', { yPercent: 18, opacity: 0, duration: 1.2 }, '<0.15')
     .to(ring, { strokeDashoffset: 0, duration: 1.6, ease: 'power2.inOut' }, '<0.1')
@@ -769,6 +806,26 @@ document.addEventListener('DOMContentLoaded', () => {
     .from('.hero-lead, .hero-ctas, .hero-facts', { y: 24, opacity: 0, duration: .9, stagger: .1 }, '-=0.6')
     .from('#badge', { scale: .4, opacity: 0, rotate: -90, duration: .9 }, '-=0.8')
     .to(line, { strokeDashoffset: 0, duration: 2.2, ease: 'power2.inOut' }, 0.4);
+
+  /* INTRO: logo is written, then the curtain opens */
+  const intro = document.getElementById('intro');
+  const playIntro = () => {
+    if (!html.classList.contains('js-intro')) { tl.play(); return; }
+    if (window.__lenis) window.__lenis.stop();
+    const it = gsap.timeline({ defaults: { ease: 'power2.inOut' }, onComplete: () => { html.classList.remove('js-intro'); intro.remove(); if (window.__lenis) window.__lenis.start(); ScrollTrigger.refresh(); } });
+    it.set('#writeRect', { attr: { width: 0 } })
+      .set('.intro-word', { opacity: 0, y: 60 })
+      .set('.intro-tag', { opacity: 0 })
+      .to('#introBar', { scaleX: 1, duration: 2.4, ease: 'none' }, 0)
+      .to('#writeRect', { attr: { width: 3690 }, duration: 1.7 }, 0.1)
+      .to('.intro-word', { opacity: 1, y: 0, duration: 1, ease: EASE }, 0.7)
+      .to('.intro-tag', { opacity: 1, duration: .9, ease: EASE }, 1.1)
+      .to('.intro-logo', { scale: .94, opacity: 0, duration: .7, ease: 'power3.in' }, 2.5)
+      .to(intro, { clipPath: 'inset(0% 0% 100% 0%)', duration: 1.1, ease: 'expo.inOut' }, 2.75)
+      .add(() => tl.play(), 3.15);
+  };
+  const fontsReady = document.fonts ? Promise.race([document.fonts.ready, new Promise(r => setTimeout(r, 1200))]) : Promise.resolve();
+  fontsReady.then(playIntro);
 
   /* rotating word */
   const list = document.querySelector('.rot-list');
@@ -865,7 +922,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dot = document.querySelector('.cursor'), ringEl = document.querySelector('.cursor-ring');
     const dx = gsap.quickTo(dot, 'x', { duration: .1 }), dy = gsap.quickTo(dot, 'y', { duration: .1 });
     const rx = gsap.quickTo(ringEl, 'x', { duration: .5, ease: 'power3' }), ry = gsap.quickTo(ringEl, 'y', { duration: .5, ease: 'power3' });
-    window.addEventListener('mousemove', e => { dx(e.clientX); dy(e.clientY); rx(e.clientX); ry(e.clientY); });
+    window.addEventListener('mousemove', e => { body.classList.add('cursor-on'); dx(e.clientX); dy(e.clientY); rx(e.clientX); ry(e.clientY); });
     document.querySelectorAll('a, button').forEach(el => {
       el.addEventListener('mouseenter', () => ringEl.classList.add('hover'));
       el.addEventListener('mouseleave', () => ringEl.classList.remove('hover'));
