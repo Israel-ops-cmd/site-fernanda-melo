@@ -123,6 +123,11 @@ h1 em,h2 em,h3 em{font-style:italic;color:var(--caramelo);font-weight:400}
 .logo-light{--ls:#D9B496;--lw:#FBF6EE;--lt:rgba(251,246,238,.7)}
 .logo-light .logo-svg{width:min(320px,100%)}
 .mono{display:block;height:1.2em;width:auto;overflow:visible}
+.logo-fm{display:block;height:60px;width:auto;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,#000 86%,transparent);mask-image:linear-gradient(90deg,#000 86%,transparent);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.logo-fm use{fill:var(--lf,#8B4F2C);stroke:var(--lf,#8B4F2C);stroke-width:16;stroke-linejoin:round;transition:fill .4s,stroke .4s}
+.menu-open .nav .logo{--lf:#D9B496}
+.logo:hover .logo-fm{transform:rotate(-4deg) scale(1.04)}
+@media (max-width:700px){.logo-fm{height:44px}}
 .nav-links{display:flex;align-items:center;gap:2rem;list-style:none;margin:0;padding:0}
 .nav-links a{text-decoration:none;font-weight:700;font-size:.88rem;position:relative;padding:.6em 0}
 .nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:.35em;height:1.5px;background:var(--caramelo);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
@@ -339,6 +344,7 @@ footer ul a{display:inline-block;padding:.65rem 0}
 .js-intro .intro{display:grid}
 .js-intro body{overflow:hidden}
 .intro-logo{width:min(760px,92vw);height:auto;overflow:visible}
+.intro-word,.intro-tag{opacity:0}
 .intro::after{content:"";position:absolute;left:50%;bottom:12%;width:120px;height:1px;background:rgba(58,42,32,.15);transform:translateX(-50%)}
 .intro .bar{position:absolute;left:50%;bottom:12%;width:120px;height:1px;background:var(--caramelo);transform-origin:left;transform:translateX(-50%) scaleX(0);z-index:1}
 
@@ -427,7 +433,7 @@ footer ul a{display:inline-block;padding:.65rem 0}
 <div class="intro" id="intro" aria-hidden="true">
   <span class="bar" id="introBar"></span>
   <svg class="intro-logo" viewBox="0 200 3690 1020">
-    <defs><clipPath id="writeClip"><rect id="writeRect" x="0" y="0" width="3690" height="1400"/></clipPath></defs>
+    <defs><clipPath id="writeClip"><rect id="writeRect" x="0" y="0" width="0" height="1400"/></clipPath></defs>
     <g clip-path="url(#writeClip)"><use href="#lg-script" class="ls"/></g>
     <g class="intro-word"><use href="#lg-word" class="lw"/></g>
     <g class="intro-tag"><use href="#lg-tag" class="lt"/></g>
@@ -440,7 +446,7 @@ footer ul a{display:inline-block;padding:.65rem 0}
 <header class="nav" id="nav">
   <div class="wrap nav-in">
     <a href="#topo" class="logo" aria-label="Fernanda Melo, nutricionista. Voltar ao início">
-      <svg class="logo-svg" viewBox="0 200 3690 1020" aria-hidden="true"><use href="#lg-script" class="ls"/><use href="#lg-word" class="lw"/><use href="#lg-tag" class="lt"/></svg>
+      <svg class="logo-fm" viewBox="1060 205 900 1015" aria-hidden="true"><use href="#lg-script"/></svg>
     </a>
     <nav aria-label="Principal">
       <ul class="nav-links">
@@ -817,14 +823,14 @@ document.addEventListener('DOMContentLoaded', () => {
       .set('.intro-word', { opacity: 0, y: 60 })
       .set('.intro-tag', { opacity: 0 })
       .to('#introBar', { scaleX: 1, duration: 2.4, ease: 'none' }, 0)
-      .to('#writeRect', { attr: { width: 3690 }, duration: 1.7 }, 0.1)
+      .to('#writeRect', { attr: { width: 3690 }, duration: 1.9, ease: 'power1.inOut' }, 0.1)
       .to('.intro-word', { opacity: 1, y: 0, duration: 1, ease: EASE }, 0.7)
       .to('.intro-tag', { opacity: 1, duration: .9, ease: EASE }, 1.1)
       .to('.intro-logo', { scale: .94, opacity: 0, duration: .7, ease: 'power3.in' }, 2.5)
       .to(intro, { clipPath: 'inset(0% 0% 100% 0%)', duration: 1.1, ease: 'expo.inOut' }, 2.75)
       .add(() => tl.play(), 3.15);
   };
-  const fontsReady = document.fonts ? Promise.race([document.fonts.ready, new Promise(r => setTimeout(r, 1200))]) : Promise.resolve();
+  const fontsReady = document.fonts ? Promise.race([document.fonts.ready, new Promise(r => setTimeout(r, 600))]) : Promise.resolve();
   fontsReady.then(playIntro);
 
   /* rotating word */
